@@ -1,0 +1,46 @@
+{
+  "extName": {
+    "message": "reCAPTCHA solver: автоматический обход"
+  },
+  "extDescription": {
+    "message": "Расширение для автоматического решения любого типа reCAPTCHA"
+  },
+  "extShortName": {
+    "message": "reCaptcha Solver"
+  },
+  "apiKey": {
+    "message": "Введите API ключ"
+  },
+  "connect": {
+    "message": "Соединение"
+  },
+  "logout": {
+    "message": "Выход"
+  },
+  "enabledSolveAutomaticallyOn": {
+    "message": "Автоматическое решение капчи <span class=\"solve-auto-on\">включено</a>"
+  },
+  "enabledSolveAutomaticallyOff": {
+    "message": "Автоматическое решение капчи <span class=\"solve-auto-off\">выключено</a>"
+  },
+  "createAccountToGetIt": {
+    "message": "<a href=\"#\" data-lang-link=\"$link$\" target=\"_blank\">Создать аккаут</a> чтобы получить API ключ",
+    "placeholders": {
+      "link": {
+        "content": "$1"
+      }
+    }
+  },
+  "accountSuccessfullyConnected": {
+    "message": "Аккаунт успешно подключен!"
+  },
+  "solveWith2Captcha": {
+    "message": "Решить капчу с reCaptcha Solver"
+  },
+  "solving": {
+    "message": "Капча решается..."
+  },
+  "solved": {
+    "message": "Капча решена!"
+  }
+}

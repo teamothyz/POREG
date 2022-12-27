@@ -1,0 +1,46 @@
+{
+  "extName": {
+    "message": "reCAPTCHA solver: auto captcha bypass"
+  },
+  "extDescription": {
+    "message": "An extension to automatically solve any type reCAPTCHA"
+  },
+  "extShortName": {
+    "message": "reCaptcha Solver"
+  },
+  "apiKey": {
+    "message": "Enter API Key"
+  },
+  "connect": {
+    "message": "Connection"
+  },
+  "logout": {
+    "message": "Logout"
+  },
+  "enabledSolveAutomaticallyOn": {
+    "message": "Automatic captcha solving <strong>enabled</strong>"
+  },
+  "enabledSolveAutomaticallyOff": {
+    "message": "Automatic captcha solving <strong>disabled</strong>"
+  },
+  "createAccountToGetIt": {
+    "message": "<a href=\"#\" data-lang-link=\"$link$\" target=\"_blank\">Create an account</a> to get an API key",
+    "placeholders": {
+      "link": {
+        "content": "$1"
+      }
+    }
+  },
+  "accountSuccessfullyConnected": {
+    "message": "Account successfully connected!"
+  },
+  "solveWith2Captcha": {
+    "message": "Solve with reCaptcha Solver"
+  },
+  "solving": {
+    "message": "Captcha solving..."
+  },
+  "solved": {
+    "message": "Captcha solved!"
+  }
+}

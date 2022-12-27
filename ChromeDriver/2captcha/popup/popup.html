@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/popup/popup.css">
+</head>
+<body>
+<div class="container">
+    <div class="main-loader">
+        <div class="content">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                 style="margin: auto; display: block; shape-rendering: auto;" width="44px" height="44px"
+                 viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                <circle cx="50" cy="50" fill="none" stroke="#8188A4" stroke-width="7" r="36"
+                        stroke-dasharray="169.64600329384882 58.548667764616276">
+                    <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite"
+                                      dur="1.282051282051282s" values="0 50 50;360 50 50"
+                                      keyTimes="0;1"></animateTransform>
+                </circle>
+            </svg>
+        </div>
+    </div>
+
+    <form id="login-form" style="display: none;">
+        <div class="content">
+            <a href="#" target="_blank" class="logo" data-lang-link="/">
+                <img src="/assets/images/logo.svg" height="20">
+                reCaptcha Solver
+            </a>
+
+            <div class="api-control">
+                <input type="text" data-lang-placeholder="apiKey" tabindex="-1" name="apiKey">
+                <button type="submit"><img src="/assets/images/login.svg" alt="" width="30px"></button>
+                <div class="result">&nbsp;</div>
+            </div>
+
+            <div class="register">
+                <span data-lang="createAccountToGetIt" data-lang-string="/auth/register"></span>
+            </div>
+        </div>
+    </form>
+
+    <div id="account-info" style="display: none;">
+        <div class="content">
+            <a href="#" target="_blank" class="logo" data-lang-link="/">
+                <img src="/assets/images/logo.svg" height="20">
+                reCaptcha Solver
+            </a>
+
+            <form id="settings-form">
+                <div class="text-center">
+                    <span style="display: none" class="auto-solver-on" data-lang="enabledSolveAutomaticallyOn"></span>
+                    <span style="display: none" class="auto-solver-off"  data-lang="enabledSolveAutomaticallyOff"></span>
+                </div>
+
+                <div class="text-center">
+                    <div class="switch">
+                        <input type="checkbox" name="isPluginEnabled" id="isPluginEnabled">
+                        <label for="isPluginEnabled"></label>
+                    </div>
+                </div>
+            </form>
+
+			<div class="user-info">
+				<div class="balance-container">
+					<img src="/assets/images/balance.svg">
+					<span class="balance"></span>
+				</div>
+
+				<div class="user-container">
+					<div class="email-container">
+						<img src="/assets/images/user.svg">
+						<span class="email"></span>
+					</div>
+
+					<a href="#" class="logout">
+						<img src="/assets/images/logout.svg">
+						<span data-lang="logout"></span>
+					</a>
+				</div>
+			</div>
+        </div>
+    </div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="/vendor/jquery/3.5.1/jquery.min.js"></script>
+<script src="/common/config.js"></script>
+<script src="/common/i18n.js"></script>
+<script src="/popup/popup.js"></script>
+</body>
+</html>

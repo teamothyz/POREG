@@ -1,0 +1,61 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+    "name": "__MSG_extName__",
+    "short_name": "__MSG_extShortName__",
+    "default_locale": "en",
+    "version": "1.0.0",
+    "description": "__MSG_extDescription__",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "service_worker.js"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_title": "reCAPTCHA solver: auto captcha bypass",
+        "default_icon": {
+            "32": "assets/images/icon_32.png",
+            "128": "assets/images/icon_128.png"
+        }
+    },
+    "icons": {
+        "32": "assets/images/icon_32.png",
+        "128": "assets/images/icon_128.png"
+    },
+    "content_scripts": [
+        {
+            "all_frames": true,
+            "run_at": "document_start",
+            "matches": [
+                "<all_urls>"
+            ],
+            "css": [
+                "content/style.css"
+            ],
+            "js": [
+                "vendor/jquery/3.5.1/jquery.min.js",
+                "common/config.js",
+                "content/core_helpers.js",
+                "content/script.js",
+                "content/captcha/recaptcha/processor.js"
+            ]
+        }
+    ],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "assets/images/*",
+                "content/*"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}
